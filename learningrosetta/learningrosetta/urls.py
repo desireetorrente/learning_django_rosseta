@@ -21,6 +21,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('traducciones.urls'))
 ]
 
 if 'rosetta' in settings.INSTALLED_APPS:

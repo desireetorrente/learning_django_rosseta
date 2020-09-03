@@ -18,7 +18,16 @@ Traducción estandar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para decir que string queremos traducir hay que usar la función ``get_text()``.
+.. code-block:: python
 
+    from django.http import HttpResponse
+
+    from django.utils.translation import gettext as _
+
+    def traducciones_list(request):
+        output = _('Bienvenido a las traducciones')
+
+        return HttpResponse(output)
 
 
 Traducción Lazy
@@ -30,8 +39,19 @@ El modo lazy lo que nos proporciona es que se traduce la string cuando y solo cu
 es usada como por ejemplo en una template y sin embargo, el modo "normal" se ejecuta
 cuando es llamada la función, da igual si se usa o no la string.
 
-https://docs.djangoproject.com/en/3.1/topics/i18n/translation/#lazy-translations
+Info: https://docs.djangoproject.com/en/3.1/topics/i18n/translation/#lazy-translations
+
+
+Crear los archivos de traducción
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**1. Crear los messages files:**
+
+de => especificación del idioma.
+
+``django-admin makemessages -l de``
+
 
 .. note::
     Este proyecto tiene el layout por defecto de Django pero no es
     el deseable.
+    Además se ha creado el folder docs con Sphinx.
