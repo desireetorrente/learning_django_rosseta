@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from .models import Traducciones
+from .models import Traduccion
 
 # Register your models here.
 
-admin.site.register(Traducciones)
+admin.site.register(Traduccion)
