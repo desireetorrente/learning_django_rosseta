@@ -73,6 +73,8 @@ Esto convierte los archivos .po en .mo y la traducción está lista para usarse.
 
 Traducción Django-rosetta
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://github.com/mbi/django-rosetta
+
 **1. Instalar roseta**
 ``pip install django-rosetta``
 
