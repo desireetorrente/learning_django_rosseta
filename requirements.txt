@@ -1,2 +1,6 @@
 Django==3.1
 django-rosetta==0.9.4
+
+sphinx==3.2.0  # https://github.com/sphinx-doc/sphinx
+sphinx-autobuild==0.7.1 # https://github.com/GaretJax/sphinx-autobuild
+Pygments==2.6.1 # https://pygments.org/

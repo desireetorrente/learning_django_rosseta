@@ -18,6 +18,7 @@ Traducción estandar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Para decir que string queremos traducir hay que usar la función ``get_text()``.
+
 .. code-block:: python
 
     from django.http import HttpResponse
