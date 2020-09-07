@@ -45,11 +45,29 @@ Info: https://docs.djangoproject.com/en/3.1/topics/i18n/translation/#lazy-transl
 
 Crear los archivos de traducción
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**1. Crear los messages files:**
+**1. Crear el path donde van a ir los archivos de traducción:**
+- Crear una carpeta locale para guardar los archivos .po
+- Configurar en setting.py este path, por ejemplo:
+
+.. code-block:: python
+
+   # Build paths inside the project like this: BASE_DIR / 'subdir'.
+   BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+   LOCALE_PATHS = [str(BASE_DIR / "locale")]
+
+**2. Crear los messages files:**
 
 de => especificación del idioma.
 
 ``django-admin makemessages -l de``
+
+**3. Explicaicón rápida del archivo .po**
+* msgid: es la string a traducir que está puesta en el código. NO cambiar
+* msgstr: espacio reservado para poner la traducción.
+
+**4. Compilar los archivos .po**
+``django-admin compilemessages``
+Esto convierte los archivos .po en .mo y la traducción está lista para usarse.
 
 
 .. note::
