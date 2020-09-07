@@ -79,7 +79,7 @@ https://github.com/mbi/django-rosetta
 ``pip install django-rosetta``
 
 **2. Añadir rosetta a las aplicaciones instaladas de Django**
-En el archivo settings.py, en INSTALLED_APPS = ['resetta']
+En el archivo settings.py, en INSTALLED_APPS = ['rosetta']
 
 **3. Añadir una URL para rosetta**
 
