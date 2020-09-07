@@ -70,6 +70,43 @@ de => especificación del idioma.
 Esto convierte los archivos .po en .mo y la traducción está lista para usarse.
 
 
+
+Traducción Django-rosetta
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**1. Instalar roseta**
+``pip install django-rosetta``
+
+**2. Añadir rosetta a las aplicaciones instaladas de Django**
+En el archivo settings.py, en INSTALLED_APPS = ['resetta']
+
+**3. Añadir una URL para rosetta**
+
+.. code-block:: python
+   
+   if 'rosetta' in settings.INSTALLED_APPS:
+    urlpatterns += [
+        url(r'^rosetta/', include('rosetta.urls'))
+    ]
+
+**4. Navegar hasta la URL añadida en el paso anterior**
+
+En este panel encontramos las traducciones disponibles de una manera mucho más ágil que con la traducción de Django.
+
+* Dashboard de las traducciónes:
+
+    .. image:: images/dashboard_rosetta.png
+        :width: 400
+        :height: 150
+        :align: center
+   
+
+* Detalle de la pantalla de traducciones:
+    .. image:: images/detalle_rosetta.png
+        :width: 400
+        :height: 150
+        :align: center
+
+
 .. note::
     Este proyecto tiene el layout por defecto de Django pero no es
     el deseable.
