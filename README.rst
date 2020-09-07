@@ -96,14 +96,15 @@ En este panel encontramos las traducciones disponibles de una manera mucho más 
 
     .. image:: images/dashboard_rosetta.png
         :width: 400
-        :height: 150
+        :height: 200
         :align: center
    
 
 * Detalle de la pantalla de traducciones:
+
     .. image:: images/detalle_rosetta.png
         :width: 400
-        :height: 150
+        :height: 200
         :align: center
 
 
